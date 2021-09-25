@@ -30,24 +30,36 @@ var questions = [
     }
 ]
 
+// start button starts timer
 startBtn.addEventListener("click", function() {
-    homePage.setAttribute('style', 'display: none');
-
-    var timeleft = 60;
-    var countdown = setInterval (function(){
-    document.getElementById("time").textContent = 'Time: ' + timeleft + ' seconds';
-    timeleft -= 1;
-    if(timeleft <= 0){
-        clearInterval(downloadTimer);
+    // homePage.setAttribute('style', 'display: none');
+    function hideElement() {
+        homePage.style.visibility = 'hidden';
     }
-    }, 1000);
+    hideElement();
+
+        var timeLeft = 60;
+        var timeInterval = setInterval(function () {
+          if (timeLeft >= 1) {
+            timer.textContent = 'Time: ' + timeLeft + ' seconds remaining';
+            timeLeft--;
+          } else if(timeLeft === 0){
+            timer.textContent = 'Time: ' + timeLeft + ' seconds remaining';
+            clearInterval(timeInterval);
+          } 
+        }, 1000);
+    
+
 
 });
 
-function showQuestions(){
-    var quest = document.createElement('div');
-    quest.append(questions.question);
-}
+
+
+
+// function showQuestions(){
+//     var quest = document.createElement('div');
+//     quest.append(questions.question);
+// }
 // showQuestions();
 
 
