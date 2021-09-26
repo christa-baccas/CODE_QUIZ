@@ -63,6 +63,7 @@ startBtn.addEventListener("click", function () {
 
   // when the play button is clicked the questions will appear
   function showQuestion() {
+
     displayQuestion.textContent = questions[currentQuestion].question;
 
     for (let i = 0; i < questions[currentQuestion].choices.length; i++) {
@@ -83,6 +84,7 @@ startBtn.addEventListener("click", function () {
         console.log("correct");
       } else if (this.value !== questions[currentQuestion].answer) {
         showQuestion();
+        timeLeft -= 10;
         currentQuestion++;
         console.log("wrong");
       }
@@ -101,13 +103,13 @@ startBtn.addEventListener("click", function () {
 // text should disappear and questions should appear
 
 // WHEN I answer a question I am presented with another question
-//
+
 
 // WHEN I answer a question incorrectly time is subtracted from the clock
 // if statment subtract time when incorrect answer is clicked
 
 // WHEN all questions are answered or the timer reaches 0 then the game is over
-//
+
 
 // WHEN the game is over I can save my initials and my score
 // location storage (string)
