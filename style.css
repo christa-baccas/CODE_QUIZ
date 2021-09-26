@@ -1,14 +1,16 @@
+
 main{
     text-align: center;
     margin: 10rem 10rem;
-
 }
 p{
     text-align:justify;
+    font-size: 3vw;
 }
 header{
     display: flex;
     justify-content: space-between;
+    font-size: 3vw;
 }
 .timer{
     display: flex;
@@ -16,11 +18,15 @@ header{
 
 a{
     text-decoration: none;
-    color: black;
 }
-#questions p{
-    color: lawngreen;
+#question-container p{
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    margin: 10rem 10rem;
-    text-align:initial;
+}
+
+#choiceBtn{
+    width:60px;
+    margin: auto;
+    padding: 10px;
 }
