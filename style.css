@@ -18,8 +18,9 @@ a{
     text-decoration: none;
     color: black;
 }
-.questions{
+#questions p{
+    color: lawngreen;
     text-align: center;
     margin: 10rem 10rem;
-    text-align:justify;
+    text-align:initial;
 }

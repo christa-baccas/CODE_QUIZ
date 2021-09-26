@@ -2,6 +2,7 @@
 var startBtn = document.getElementById('startBtn');
 var startScreen = document.getElementById('container');
 var timer = document.getElementById('time');
+var currentQuestion = 0;
 var questions = [
     {
         question: 'what color is the sky?',
@@ -59,7 +60,7 @@ startBtn.addEventListener("click", function() {
         displayQuestion.setAttribute('style', 'visibility: visible') 
         questionContainer.append(displayQuestion);
     
-        displayQuestion.textContent = questions[0].question;
+        displayQuestion.textContent = questions[currentQuestion].question;
 
         for (let i = 0; i < questions[0].choices.length; i++) {
             var choiceBtn = document.createElement('button');
@@ -72,9 +73,11 @@ startBtn.addEventListener("click", function() {
              choiceBtn.onclick = buttonClick;
            }
            function buttonClick(){
-               if(this.value === questions[0].answer){
+               if(this.value === questions[currentQuestion].answer){
+                   currentQuestion +=1;
                    console.log("correct")
                }else{
+                   currentQuestion +=1;
                    console.log("wrong")
                }
             }
