@@ -18,3 +18,8 @@ a{
     text-decoration: none;
     color: black;
 }
+.questions{
+    text-align: center;
+    margin: 10rem 10rem;
+    text-align:justify;
+}
