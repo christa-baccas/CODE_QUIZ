@@ -1,9 +1,3 @@
-var startBtn = document.getElementById("startBtn");
-var startScreen = document.getElementById("container");
-var timer = document.getElementById("time");
-var currentQuestion = 0;
-var viewScore = document.getElementById('score');
-var score = '';
 var questions = [
   {
     question: "what color is the sky?",
@@ -31,30 +25,43 @@ var questions = [
     answer: "yellow",
   },
 ];
+var startBtn = document.getElementById("startBtn");
+var startScreen = document.getElementById("container");
+var header = document.getElementById("header");
+var text = document.getElementById("text");
+var timer = document.getElementById("time");
+var currentQuestion = 0;
+var score = 0;
 
-// start button to take quiz
+
+
+//start button to take quiz
 startBtn.addEventListener("click", function () {
 
-  // this will hide the title, text and button once 'start quiz' is clicked.
+  //this will hide the title, text and button once 'start quiz' is clicked.
   function hideElement() {
-    startScreen.setAttribute("style", "visibility: hidden");
+    header.setAttribute("style", "visibility: hidden");
+    text.setAttribute("style", "visibility: hidden");
+    startBtn.setAttribute("style", "visibility: hidden");
   }
-
   hideElement();
 
-  // timer is set once the start button is clicked starting at 60 seconds.
-  var timeLeft = 30;
+
+  //timer is set once the start button is clicked starting at 60 seconds.
+  var timeLeft = 60;
   setInterval(function () {
     if (timeLeft >= 1) {
       timer.textContent = "Time: " + timeLeft + " seconds remaining";
       timeLeft--;
-    } else if (timeLeft <= 0) {
+    } else if (timeLeft == 0) {
       displayQuestion.textContent = 'Game Over';
       timer.textContent = "Time: " + timeLeft + " seconds remaining";
     }
   }, 1000);
 
-  // this container is created for questions to appear after start quiz is clicked
+
+
+  //this container is created for questions to appear after start quiz is clicked
   var questionContainer = document.createElement("div");
   questionContainer.setAttribute("id", "question-container");
   startScreen.appendChild(questionContainer);
@@ -64,14 +71,14 @@ startBtn.addEventListener("click", function () {
   displayQuestion.setAttribute("style", "visibility: visible");
   questionContainer.append(displayQuestion);
 
+
   
-  // when the play button is clicked the questions will appear
+  //when the play button is clicked the questions will appear
   function showQuestion() {
 
     for (let j = 0; j < questions.length; j++) {
         
-
-        displayQuestion.textContent = questions[currentQuestion].question;
+      displayQuestion.textContent = questions[currentQuestion].question;
 
         for (let i = 0; i < questions[currentQuestion].choices.length; i++) {
             var choiceBtn = document.createElement("button");
@@ -88,39 +95,40 @@ startBtn.addEventListener("click", function () {
 
     function buttonClick() {
       if (this.value === questions[currentQuestion].answer) {
-        currentQuestion++;
-        showQuestion();
-        console.log("correct");
+          score++;
+          currentQuestion++;
+          showQuestion();
+          hideQuestions()
+          console.log("correct");
       } else if (this.value !== questions[currentQuestion].answer) {
-        timeLeft -= 10;
-        currentQuestion++;
-        showQuestion();
-        console.log("wrong");
-      } else if (this.value === questions[4].answer){
-          window.alert('Game Over');
+          timeLeft -= 10;
+          currentQuestion++;
+          showQuestion();
+          hideQuestions()
+          console.log("wrong");
       }
-
+      console.log('score' + score);
       console.log(currentQuestion);
     }
   }
   showQuestion();
+   
+  function hideQuestions(){
+    if(questions.length == true){
+      return console.log('done');
+    }
+  }
+  hideQuestions()
 });
 
 
-//   View highscore
 
-//   viewScore.addEventListener("click", function() {
-//     var scoreContainer = document.createElement("div");
-//     scoreContainer.setAttribute("id", "score-container");
-//     startScreen.append(scoreContainer);
-  
-//     var displayScore = document.createElement("p");
-//     displayScore.setAttribute("id", "score");
-//     displayScore.setAttribute("style", "visibility: visible");
-//     scoreContainer.append(displayScore);
-  
-//     displayScore.textContent = 
-//   });
+
+
+
+
+
+
 
 
 
