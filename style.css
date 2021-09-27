@@ -30,3 +30,7 @@ a{
     margin: auto;
     padding: 10px;
 }
+
+.hide{
+    display: none;
+}
