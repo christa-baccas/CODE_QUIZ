@@ -11,7 +11,7 @@
     <header>
       <nav id="navbar">
         <a href="#" id="score">View Highscores</a>
-        <a class="timer">Time: <span id="time">0</span></a>
+        <a class="timer">Time:<span id="time">0</span></a>
       </nav>
     </header>
     <main id="container">
@@ -22,14 +22,14 @@
           limit. Keep in mind that incorrect answers will penalize your score
           time by 10 seconds!
         </p>
-        <button id="startBtn" type="button">Start Quiz</button>
+        <button id="startBtn" class="startBtn" type="button">Start Quiz</button>
       </div>
 
       <div id="endScreen" class="hide">
-        <h2>game Over</h2>
-        <p>your score is: <span id="finalScore"></span></p>
+        <h2>Quiz Over</h2>
+        <p>Your score is: <span id="finalScore"></span></p>
         <p>
-          enter initials: <input type="text" id="initials" max="3" />
+          Enter Initials: <input type="text" id="initials" max="3" />
           <button id="submit">Submit</button>
         </p>
       </div>

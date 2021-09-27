@@ -1,36 +1,57 @@
 
+body{
+    background-color: lightslategray;
+}
 main{
     text-align: center;
     margin: 10rem 10rem;
 }
 p{
     text-align:justify;
-    font-size: 3vw;
+    font-size: 2vw;
 }
 header{
     display: flex;
     justify-content: space-between;
-    font-size: 3vw;
+    font-size: 2vw;
 }
+.startBtn{
+    padding: 10px;
+    width: 100px;
+    color:white;
+    background-color: midnightblue;
+}
+
 .timer{
     display: flex;
+    color: midnightblue;
 }
 
 a{
     text-decoration: none;
+    color: midnightblue;
 }
+
 #question-container p{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
 }
 
+
 #choiceBtn{
     width:60px;
-    margin: auto;
+    margin: 10px;
     padding: 10px;
+    display: inline;
 }
 
 .hide{
     display: none;
+}
+
+#endScreen{
+    border: 2px solid midnightblue;
+    border-radius: 20px;
+    padding-left: 10px;
 }
