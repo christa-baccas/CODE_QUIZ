@@ -166,24 +166,16 @@ viewScore.addEventListener('click', function scoreBoard(){
   // console.log(scoresResults)
 
   var orderList = document.getElementById('results') //ul on the html
+
   for (let j = 0; j < scoresResults.length; j++) {
     var list = document.createElement('li');
     list.textContent = scoresResults[j];
-    orderList.append(list);
+    // orderList.append(list);
+    console.log('test');
   }
 });
 
-// for (let i = 0; i < questions[currentQuestion].choices.length; i++) {
-//   var choiceBtn = document.createElement("button");
-//   choiceBtn.textContent = questions[currentQuestion].choices[i];
-//   choiceBtn.setAttribute("type", "button");
-//   choiceBtn.setAttribute("id", "choiceBtn");
-//   choiceBtn.setAttribute("style", "visibility: visible");
-//   choiceBtn.setAttribute("value", questions[currentQuestion].choices[i]);
-//   displayQuestion.append(choiceBtn);
 
-//   choiceBtn.onclick = buttonClick;
-// }
 // 1. click start
 // - timer start (countdown from 60 sec)
 // - first question appears
