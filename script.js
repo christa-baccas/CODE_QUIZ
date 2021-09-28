@@ -1,28 +1,28 @@
 var questions = [
   {
-    question: "What color is the sky?",
-    choices: ["Green", "Blue", "Yellow", "Red"],
-    answer: "Blue",
+    question: "Where was Kobe Born?",
+    choices: ["Philadelphia, PA", "Denver, CO", "Harlem, NY", "Austin, TX"],
+    answer: "Philadelphia, PA",
   },
   {
-    question: "What color is the ocean?",
-    choices: ["Green", "Blue", "Yellow", "Red"],
-    answer: "Blue",
+    question: "What is Kobe's middle name?",
+    choices: ["Mamba", "Bean", "Jarvis", "Kyle"],
+    answer: "Bean",
   },
   {
-    question: "What color is the grass?",
-    choices: ["Green", "Blue", "Yellow", "Red"],
-    answer: "Green",
+    question: "At six years old, where was Kobe living?",
+    choices: ["Brazil", "California", "Italy", "Germany"],
+    answer: "Italy",
   },
   {
-    question: "What color is the firetruck?",
-    choices: ["Green", "Blue", "Yellow", "Red"],
-    answer: "Red",
+    question: "How many championships did Kobe win?",
+    choices: ["3", "4", "5", "2"],
+    answer: "4",
   },
   {
-    question: "What color is the taxi?",
-    choices: ["Green", "Blue", "Yellow", "Red"],
-    answer: "Yellow",
+    question: "What college did Kobe go to?",
+    choices: ["UT", "Rutgers", "Oregan", "He did not go to college"],
+    answer: "He did not go to college",
   },
 ];
 var startBtn = document.getElementById("startBtn");

@@ -40,10 +40,15 @@ a{
 
 
 #choiceBtn{
-    width:60px;
+    /* width:60px;
     margin: 10px;
-    padding: 10px;
+    padding: 10px; */
+    font-size: 25px;
+    padding: auto ;
+    margin: auto;
     display: inline;
+    background-color: midnightblue;
+    color: white;
 }
 
 .hide{
