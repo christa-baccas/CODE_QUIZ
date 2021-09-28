@@ -19,10 +19,10 @@ This project was to create a quiz witha minimum of 5 questions.
     - enter initals
     - local storage (key: intitals / value: score)
 # Link
-
+https://christa-baccas.github.io/HOMEWORK4_CODE_QUIZ/
 
 # ScreenShot
-![Alt Txt](screencapture-10-0-1-5-57163-HOMEWORK4-CODE-QUIZ-index-html-2021-09-27-14_37_45.png)
+![screenshot](screencapture-10-0-1-5-57163-HOMEWORK4-CODE-QUIZ-index-html-2021-09-27-14_37_45.png)
 
 # Help / Assistance
 - Study Group

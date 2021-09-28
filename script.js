@@ -1,6 +1,6 @@
 var questions = [
   {
-    question: "Where was Kobe Born?",
+    question: "Where was Kobe born?",
     choices: ["Philadelphia, PA", "Denver, CO", "Harlem, NY", "Austin, TX"],
     answer: "Philadelphia, PA",
   },
@@ -21,8 +21,8 @@ var questions = [
   },
   {
     question: "What college did Kobe go to?",
-    choices: ["UT", "Rutgers", "Oregan", "He did not go to college"],
-    answer: "He did not go to college",
+    choices: ["UT", "Rutgers", "Oregan", "None"],
+    answer: "None",
   },
 ];
 var startBtn = document.getElementById("startBtn");
@@ -68,6 +68,7 @@ var displayQuestion = document.createElement("p");
 displayQuestion.setAttribute("id", "question");
 displayQuestion.setAttribute("style", "visibility: visible");
 questionContainer.append(displayQuestion);
+
 
 // score being displayed
 var answers = document.createElement("div");
@@ -117,7 +118,7 @@ function showQuestion() {
   }
 }
 
-// if time runs out or user answers all questions
+// if time runs out or user answers all questions the game is ended
 function endGame() {
   displayQuestion.textContent = "";
   var endScreen = document.getElementById("endScreen");
@@ -152,6 +153,19 @@ var SubmitBtn = document.getElementById("submit");
 SubmitBtn.addEventListener("click", saveScore);
 
 
+// view highscore
+var viewScore = document.getElementById('score');
+
+viewScore.addEventListener('click', function scoreBoard(){
+  startScreen.textContent = '';
+  // displayQuestion.textContent = '';
+  // endScreen.textContent = "";
+  viewScore.setAttribute('style', 'disply: inline');
+  // clearInterval(timerId);
+  // viewScore.setAttribute('class', 'view-score');
+
+
+});
 
 
 // 1. click start
