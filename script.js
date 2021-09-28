@@ -83,7 +83,6 @@ function showQuestion() {
   // console.log(questions[currentQuestion].question);
   displayQuestion.textContent = questions[currentQuestion].question;
 
-  //nested loop going through chocies for each question
   for (let i = 0; i < questions[currentQuestion].choices.length; i++) {
     var choiceBtn = document.createElement("button");
     choiceBtn.textContent = questions[currentQuestion].choices[i];
@@ -153,27 +152,31 @@ var SubmitBtn = document.getElementById("submit");
 SubmitBtn.addEventListener("click", saveScore);
 
 
-// view highscore
-var viewScore = document.getElementById('score');
+//view highscore
+// var viewScore = document.getElementById('score');
 
-viewScore.addEventListener('click', function scoreBoard(){
-  console.log("board")
-  startScreen.textContent = '';
-  var scoresResults = JSON.parse(localStorage.getItem("highScore"))
-  console.log(scoresResults)
-  viewScore.removeAttribute('class');
-  // scoresResults = JSON.parse(localStorage.getItem("highScore"))
-  // console.log(scoresResults)
+// viewScore.addEventListener('click', function scoreBoard(){
+//   var scoresResults = JSON.parse(localStorage.getItem("highScore"))
+//   var orderList = document.getElementById('results'); //ul on the html
+//   startScreen.setAttribute('style', 'visibility: hidden');
 
-  var orderList = document.getElementById('results') //ul on the html
+//   var resultsContainer = document.getElementsById('highscore');
+//   resultsContainer.setAttribute('style', 'display:block');
+//   console.log(resultsContainer);
+//   for (let j = 0; j < scoresResults.length; j++) {
+//     var list = document.createElement('li');
+//     localStorage.setItem("highScore", JSON.stringify(scoresResults));
+//     list.textContent = scoresResults[j];
+//     orderList.append(list);
+//   }
+// });
 
-  for (let j = 0; j < scoresResults.length; j++) {
-    var list = document.createElement('li');
-    list.textContent = scoresResults[j];
-    // orderList.append(list);
-    console.log('test');
-  }
-});
+
+
+
+
+
+
 
 
 // 1. click start

@@ -40,9 +40,6 @@ a{
 
 
 #choiceBtn{
-    /* width:60px;
-    margin: 10px;
-    padding: 10px; */
     font-size: 25px;
     padding: auto ;
     margin: auto;
@@ -55,11 +52,18 @@ a{
     display: none;
 }
 
+
 #endScreen{
     border: 2px solid midnightblue;
     border-radius: 20px;
     padding-left: 10px;
 }
+
 #Highscores{
     border: 2px solid midnightblue;
+}
+
+ul{
+    border: 4px solid black;
+    color: red;
 }
