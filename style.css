@@ -8,12 +8,16 @@ main{
 }
 p{
     text-align:justify;
-    font-size: 2vw;
+    font-size: 3vw;
 }
 header{
     display: flex;
     justify-content: space-between;
-    font-size: 2vw;
+    font-size: 3vw;
+}
+#header{
+    font-size: 3vw;
+    padding-bottom: 20px;
 }
 .startBtn{
     padding: 10px;
@@ -40,7 +44,7 @@ a{
 
 
 #choiceBtn{
-    font-size: 25px;
+    font-size: 20px;
     padding: auto ;
     margin: auto;
     display: inline;
@@ -54,7 +58,6 @@ a{
 
 
 #endScreen{
-    border: 2px solid midnightblue;
     border-radius: 20px;
     padding-left: 10px;
 }

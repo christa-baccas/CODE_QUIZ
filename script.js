@@ -69,7 +69,6 @@ displayQuestion.setAttribute("id", "question");
 displayQuestion.setAttribute("style", "visibility: visible");
 questionContainer.append(displayQuestion);
 
-
 // score being displayed
 var answers = document.createElement("div");
 var stat = document.createElement("p");
@@ -126,6 +125,7 @@ function endGame() {
 
   var finalScore = document.getElementById("finalScore");
   finalScore.textContent = timeLeft;
+
 }
 
 function saveScore() {
