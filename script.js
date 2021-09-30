@@ -152,27 +152,6 @@ var SubmitBtn = document.getElementById("submit");
 SubmitBtn.addEventListener("click", saveScore);
 
 
-//view highscore
-// var viewScore = document.getElementById('score');
-
-// viewScore.addEventListener('click', function scoreBoard(){
-//   var scoresResults = JSON.parse(localStorage.getItem("highScore"))
-//   var orderList = document.getElementById('results'); //ul on the html
-//   startScreen.setAttribute('style', 'visibility: hidden');
-
-//   var resultsContainer = document.getElementsById('highscore');
-//   resultsContainer.setAttribute('style', 'display:block');
-//   console.log(resultsContainer);
-//   for (let j = 0; j < scoresResults.length; j++) {
-//     var list = document.createElement('li');
-//     localStorage.setItem("highScore", JSON.stringify(scoresResults));
-//     list.textContent = scoresResults[j];
-//     orderList.append(list);
-//   }
-// });
-
-
-
 
 
 
