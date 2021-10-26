@@ -1,6 +1,6 @@
 # HOMEWORK4_CODE_QUIZ
 # Description
-This project was to create a quiz witha minimum of 5 questions. 
+This project was to create a quiz with a minimum of 5 questions. 
 
 1. click start
     - timer start (countdown from 60 sec)
@@ -11,12 +11,12 @@ This project was to create a quiz witha minimum of 5 questions.
         - increase score count by 1
     - if user answeres incorrect:
         - move to next question
-        - minus 10 sec from timer
+        - minus 10 seconds from timer
 3. end of quiz
     - user answers all questions
     - timer hits 0
 4. scoreboard
-    - enter initals
+    - enter initials
     - local storage (key: intitals / value: score)
 # Link
 https://christa-baccas.github.io/HOMEWORK4_CODE_QUIZ/
