@@ -1,4 +1,4 @@
-# HOMEWORK4_CODE_QUIZ
+# CODE_QUIZ
 # Description
 This project was to create a quiz with a minimum of 5 questions. 
 
